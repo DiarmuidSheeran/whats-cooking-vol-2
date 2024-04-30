@@ -7,6 +7,7 @@
     <p>Please, use the following form to log-in:</p>
     <form action="" method="post">
         {{ form.as_p }}
-        {% csfr_token %}
+        {% csrf_token %}
         <p><input type="submit" value="Log in" name="" id=""></p>
     </form>
+{% endblock %}
